@@ -1,26 +1,15 @@
-async function consultarAPI() {
-    try {
-        const respuesta = await fetch("https://api.escuelajs.co/api/v1/users")
-        const datos = await respuesta.json() 
+export async function consultarAPI() {
 
-        const datosFiltrados = datos.map(dato => ({
+    const respuesta = await fetch("https://api.escuelajs.co/api/v1/users")
+    const datos = await respuesta.json()
 
-            id: dato.id,
-            nombre: dato.name,
-            email: dato.email
-        
-        }))
+    const datosFiltrados = datos.map(dato => ({
 
-        const ruta = path.join("./usuarios.json")
-        const contenidoJSON = JSON.stringify(datosFiltrados, null, 4)
-        await fsp.writeFile(ruta, contenidoJSON)
+        id: dato.id,
+        name: dato.name,
+        email: dato.email
 
-        const datosJSON = await fsp.readFile(ruta, 'utf-8');
-        const datosJSONConvertidos = JSON.parse(datosJSON);
-        console.log(datosJSONConvertidos);
+    }))
 
-    } catch(error) {
-
-        console.log(error)
-    }
+    return datosFiltrados
 }
