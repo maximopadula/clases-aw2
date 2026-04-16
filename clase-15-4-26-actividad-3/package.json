@@ -1,0 +1,22 @@
+{
+  "name": "clases-aw2",
+  "version": "1.0.0",
+  "description": "Todo lo trabajdo en clases se guardará aquí.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.mjs",
+    "start": "node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximopadula/clases-aw2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/maximopadula/clases-aw2/issues"
+  },
+  "homepage": "https://github.com/maximopadula/clases-aw2#readme"
+}
