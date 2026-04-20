@@ -1,0 +1,9 @@
+=========================================================
+  GUÍA RÁPIDA DE CÓDIGOS DE ESTADO HTTP (Status Codes)
+=========================================================
+  - 200 (OK): La petición se procesó exitosamente y se devuelven los datos solicitados.
+  - 201 (Created): La petición tuvo éxito y como resultado se creó un nuevo recurso (ej: nuestro archivo datos.json).
+  - 400 (Bad Request): Error del cliente. Petición mal formada o pasos omitidos (A veces usado en lugar de 404 si falta una acción previa).
+  - 404 (Not Found): No se encontró la ruta solicitada, o no se encontró el recurso/archivo interno requerido.
+  - 500 (Internal Server Error): Hubo un fallo interno en el servidor que impidió completar la solicitud (ej: errores al leer/escribir disco, o pérdida de red).
+=========================================================
