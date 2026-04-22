@@ -7,3 +7,5 @@
   - 404 (Not Found): No se encontró la ruta solicitada, o no se encontró el recurso/archivo interno requerido.
   - 500 (Internal Server Error): Hubo un fallo interno en el servidor que impidió completar la solicitud (ej: errores al leer/escribir disco, o pérdida de red).
 =========================================================
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#informational_responses
