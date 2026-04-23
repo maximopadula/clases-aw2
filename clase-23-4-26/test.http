@@ -1,0 +1,8 @@
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nombre": "Samsung A33",
+    "precio": "500000"
+}
