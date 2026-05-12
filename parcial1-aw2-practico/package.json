@@ -1,0 +1,16 @@
+{
+  "name": "parcial1-aw2-practico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rutas.mjs",
+  "scripts": {
+    "dev": "node --watch rutas.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "5.2.1"
+  }
+}
