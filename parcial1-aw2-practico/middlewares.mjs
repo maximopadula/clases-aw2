@@ -1,6 +1,6 @@
 /*
     MÓDULO: MIDDLEWARES
-    - ¿Qué es un middleware?: Son funciones "intermedias" que atrapan la petición antes de que llegue al controlador. Tienen acceso a la petición (req), a la respuesta (res) y pueden dejarla pasar usando next().
+    - ¿Qué es un middleware?: Son funciones intermedias que atrapan la petición antes de que llegue al controlador. Tienen acceso a la petición (req), a la respuesta (res) y pueden dejarla pasar usando next().
     - ¿Qué hace este módulo?: Contiene las funciones de validación previas (como verificar si el cohete existe), para que los controladores no tengan que hacer ese trabajo.
 */
 
