@@ -1,12 +1,12 @@
 /*
-    MÓDULO: RUTAS (Enrutador)
+    MÓDULO: RUTAS
     - ¿Qué es una ruta?: Es la puerta de entrada a la aplicación. Mapea una URL y un método HTTP (ej. GET) con una acción específica.
     - ¿Qué hace este módulo?: Inicia el servidor, recibe las peticiones del usuario y las redirige hacia el middleware y el controlador correspondiente.
 */
 
 import express from 'express'
 import { devolverCohetes, devolverCohetePorId, devolverCoheteMasAlto } from './controladores.mjs'
-import { verificarExistenciaCohete } from './middlewares.mjs'
+import { verificarExistenciaCohete, encontrarCoheteMasAlto } from './middlewares.mjs'
 
 // Definimos el puerto en el que correrá nuestro servidor
 const PUERTO = 3000
@@ -30,7 +30,7 @@ app.get("/api/v1/cohetes/:id", verificarExistenciaCohete, devolverCohetePorId)
     Endpoint orientado a procedimientos.
     Es una ruta separada de la API REST clásica, que ejecuta una acción específica (en este caso, un algoritmo que compara las alturas de los cohetes).
 */
-app.get("/obtener-cohete-mas-alto", devolverCoheteMasAlto)
+app.get("/obtener-cohete-mas-alto", encontrarCoheteMasAlto, devolverCoheteMasAlto)
 
 /*
     Iniciamos el servidor para que escuche peticiones en el puerto asignado.
