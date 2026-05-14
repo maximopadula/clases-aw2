@@ -1,7 +1,6 @@
 /*
     MÓDULO: DATOS
-    - ¿Qué es una base de datos?: Es la fuente de la verdad de la aplicación, donde reside la información que se va a consumir.
-    - ¿Qué hace este módulo?: Simula una base de datos exportando un arreglo estático con toda la información de los cohetes.
+    - Simula una base de datos exportando un arreglo estático con toda la información de los cohetes.
 */
 export const cohetes = [
     {
@@ -47,6 +46,6 @@ export const cohetes = [
         metrosAltura: 98,
         etapas: 2,
         toneladasCarga: 95,
-        reutilizacion: "nula"
+        reutilizacion: "desechable"
     }
 ]
