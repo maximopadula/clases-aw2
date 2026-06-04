@@ -2,23 +2,22 @@ import express from 'express'
 //implementar módulo path
 import multer from 'multer'
 import {nanoid} from 'nanoid'
-import {MimeType} from 'mime-type'
+import mime from 'mime-types'
 
 const app = express()
-const mime = MimeType()
 
 const almacenamiento = multer.diskStorage({
   destination: function (req, file, cb) {
 
     // ---- Agregar chequeos acá ----
 
-    cb(null, '/archivos')
+    cb(null, './archivos')
   },
   filename: function (req, file, cb) {
     //obtengo la extension desde el mime type
     //const extension = mime.extension(file.mimetype)
     // obtengo un UID con nanoid()
-    const nombreImagen = nanoid() + '.' + mime.extension(file.mime) //genera un ID único
+    const nombreImagen = nanoid() + '.' + mime.extension(file.mimetype) //genera un ID único
     cb(null, nombreImagen)
   }
 })
@@ -35,10 +34,12 @@ app.use('/admin', express.static('./front-admin')) //ponemos /admin para mostrar
 
 app.use('/archivos', express.static('./archivos')) // hacemos pública la carpeta de archivos
 
-//Ruta y método
+//Ruta y método (al enviar el archivo)
 app.post('/subir-archivo', (req, res) => {
 
     gestionArchivos(req, res, (error) => {
+
+      console.log(error)
 
         // Si hay error respondemos
         if(error) return res.status(500).json({mensaje: 'Error'})
