@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./recursos/css/estilos.css">
+    <script type="module" src="./recursos/js/index.js"></script>
+    <title>Iniciar Sesión</title>
 </head>
-<body>
-    <main>
-        <div>
-            <h1>Bienvenido</h1>
-            <form action="">
-                <h2>Iniciar sesión</h2>
-                <input type="text">
-                <input type="password">
-                <button type="submit">Ingresar</button>
+<body class="pagina-login">
+    <main class="pagina-login__principal">
+        <div class="contenedor-login">
+            <h1 class="contenedor-login__titulo">Bienvenido</h1>
+            <form id="form-login" class="formulario-login" action="/api/v1/login" method="post">
+                <h2 class="formulario-login__subtitulo">Iniciar sesión</h2>
+                
+                <div class="formulario-login__grupo">
+                    <input type="text" id="usuario" class="formulario-login__campo" name="usuario" placeholder="Usuario" required>
+                </div>
+                <div class="formulario-login__grupo">
+                    <input type="password" id="password" class="formulario-login__campo" name="password" placeholder="Contrasena" required>
+                </div>
+                
+                <p id="mensaje-error" class="formulario-login__error"></p>
+                
+                <button type="submit" class="formulario-login__boton">Ingresar</button>
             </form>
         </div>
     </main>

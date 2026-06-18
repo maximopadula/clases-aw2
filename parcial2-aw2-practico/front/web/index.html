@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recursos/css/estilos.css">
     <script type="module" src="./recursos/js/index.js"></script>
-    <title>Rocket.com</title>
+    <title>Rocket.com - Vehículos</title>
 </head>
-<body>
+<body class="cuerpo-aplicacion">
 
-    <header>
-        <a href="./index.html">
-            <img src="" alt=""> <!-- Logotipo -->           
+    <header class="cabecera-aplicacion">
+        <a class="cabecera-aplicacion__enlace-logo" href="./index.html">
+            <span class="cabecera-aplicacion__texto-logo">Rocket.com</span>
         </a>
 
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./carga-util.html">ranking</a></li>
-                <li><a href="/cerrar-sesion">Cerrar sesión</a></li>
+        <nav class="cabecera-aplicacion__navegacion">
+            <ul class="cabecera-aplicacion__lista">
+                <li class="cabecera-aplicacion__item"><a class="cabecera-aplicacion__enlace cabecera-aplicacion__enlace--activo" href="./index.html">Inicio</a></li>
+                <li class="cabecera-aplicacion__item"><a class="cabecera-aplicacion__enlace" href="./carga-util.html">Ranking</a></li>
+                <li class="cabecera-aplicacion__item"><a class="cabecera-aplicacion__enlace cabecera-aplicacion__enlace--cerrar-sesion" href="/cerrar-sesion">Cerrar sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    <main> 
-        <div> <!-- Contenedor para ancho máximo -->
-            <h1>Vehículos</h1>
-            <section id="contenedor-cohetes">
-
+    <main class="principal-aplicacion"> 
+        <div class="contenedor">
+            <h1 class="principal-aplicacion__titulo">Vehículos</h1>
+            <section id="contenedor-cohetes" class="rejilla-cohetes">
+                <!-- Tarjetas dinámicas inyectadas por JS -->
             </section>
         </div>
     </main>
 
-    <footer>
-        <p>Rocket.com</p>
+    <footer class="pie-aplicacion">
+        <p class="pie-aplicacion__texto">© 2026 Rocket.com</p>
     </footer>
 </body>
 </html>

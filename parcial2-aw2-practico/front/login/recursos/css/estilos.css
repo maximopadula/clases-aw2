@@ -1,0 +1,103 @@
+/* Estilos base y reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.pagina-login {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+}
+
+.pagina-login__principal {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Contenedor del Login */
+.contenedor-login {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.contenedor-login__titulo {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111111;
+}
+
+/* Formulario del Login */
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formulario-login__subtitulo {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #666666;
+}
+
+.formulario-login__grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-login__campo {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+    color: #333333;
+    outline: none;
+}
+
+.formulario-login__campo:focus {
+    border-color: #0066cc;
+    background-color: #ffffff;
+}
+
+.formulario-login__error {
+    font-size: 14px;
+    color: #cc0000;
+    min-height: 20px;
+    margin-top: -4px;
+}
+
+.formulario-login__boton {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formulario-login__boton:hover {
+    background-color: #0052a3;
+}
+
+.formulario-login__boton:active {
+    background-color: #003d7a;
+}

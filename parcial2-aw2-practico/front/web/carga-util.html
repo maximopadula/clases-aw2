@@ -3,52 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recursos/css/estilos.css">
     <script type="module" src="./recursos/js/carga-util.js"></script>
-    <title>Rocket.com</title>
+    <title>Rocket.com - Ranking</title>
 </head>
-<body>
+<body class="cuerpo-aplicacion">
 
-    <header>
-        <a href="./index.html">
-            <img src="" alt=""> <!-- Logotipo -->           
+    <header class="cabecera-aplicacion">
+        <a class="cabecera-aplicacion__enlace-logo" href="./index.html">
+            <span class="cabecera-aplicacion__texto-logo">Rocket.com</span>
         </a>
 
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./carga-util.html">ranking</a></li>
-                <li><a href="/cerrar-sesion">Cerrar sesión</a></li>
+        <nav class="cabecera-aplicacion__navegacion">
+            <ul class="cabecera-aplicacion__lista">
+                <li class="cabecera-aplicacion__item"><a class="cabecera-aplicacion__enlace" href="./index.html">Inicio</a></li>
+                <li class="cabecera-aplicacion__item"><a class="cabecera-aplicacion__enlace cabecera-aplicacion__enlace--activo" href="./carga-util.html">Ranking</a></li>
+                <li class="cabecera-aplicacion__item"><a class="cabecera-aplicacion__enlace cabecera-aplicacion__enlace--cerrar-sesion" href="/cerrar-sesion">Cerrar sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    <main> 
-        <div> <!-- Contenedor para ancho máximo -->
-            <h1>Analizador de Carga Útil 3000</h1>
+    <main class="principal-aplicacion"> 
+        <div class="contenedor">
+            <h1 class="principal-aplicacion__titulo">Analizador de Carga Útil 3000</h1>
             
-            <!-- Texto explicando qué hace el procedimiento (Pide la consigna) -->
-            <section>
-                <p>
-                    <strong>¿Qué hace esta herramienta?</strong><br>
+            <section class="caja-procedimiento">
+                <p class="caja-procedimiento__informacion">
+                    <strong class="caja-procedimiento__informacion-titulo">¿Qué hace esta herramienta?</strong><br>
                     Ejecuta un algoritmo extremadamente avanzado que evalúa la capacidad en toneladas de todos los cohetes y los clasifica automáticamente en categorías estandarizadas.
                 </p>
-                <!-- Botón para ejecutar el procedimiento (Pide la consigna) -->
-                <button id="btn-ejecutar">Ejecutar</button>
+                <button id="btn-ejecutar" class="caja-procedimiento__boton">Ejecutar</button>
             </section>
 
-            <!-- Texto para indicar si hubo éxito o error (Pide la consigna) -->
-            <p id="mensaje-estado"></p>
+            <p id="mensaje-estado" class="caja-procedimiento__estado"></p>
 
-            <!-- Contenedor donde mostraremos los datos devueltos (Pide la consigna) -->
-            <section id="contenedor-resultados">
-                <!-- Aquí inyectaremos una tabla generada con JS -->
+            <section id="contenedor-resultados" class="caja-procedimiento__resultados">
+                <!-- Aquí inyectaremos la lista/tabla limpia generada con JS -->
             </section>
 
         </div>
     </main>
 
-    <footer>
-        <p>Rocket.com</p>
+    <footer class="pie-aplicacion">
+        <p class="pie-aplicacion__texto">© 2026 Rocket.com</p>
     </footer>
 </body>
 </html>

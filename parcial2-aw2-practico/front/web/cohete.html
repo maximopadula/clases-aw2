@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./recursos/js/cohete.js"></script>
-    <title>Rocket.com</title>
+    <link rel="stylesheet" href="./recursos/css/estilos.css">
+    <script type="module" src="./recursos/js/cohete.js"></script>
+    <title>Rocket.com - Detalle</title>
 </head>
-<body>
+<body class="cuerpo-aplicacion">
 
-    <header>
-        <a href="./index.html">
-            <img src="" alt=""> <!-- Logotipo -->           
+    <header class="cabecera-aplicacion">
+        <a class="cabecera-aplicacion__enlace-logo" href="./index.html">
+            <span class="cabecera-aplicacion__texto-logo">Rocket.com</span>
         </a>
 
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./carga-util.html">ranking</a></li>
-                <li><a href="/cerrar-sesion">Cerrar sesión</a></li>
+        <nav class="cabecera-aplicacion__navegacion">
+            <ul class="cabecera-aplicacion__lista">
+                <li class="cabecera-aplicacion__item"><a class="cabecera-aplicacion__enlace" href="./index.html">Inicio</a></li>
+                <li class="cabecera-aplicacion__item"><a class="cabecera-aplicacion__enlace" href="./carga-util.html">Ranking</a></li>
+                <li class="cabecera-aplicacion__item"><a class="cabecera-aplicacion__enlace cabecera-aplicacion__enlace--cerrar-sesion" href="/cerrar-sesion">Cerrar sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    <main> 
-        <div> <!-- Contenedor para ancho máximo -->
-            <h1 id="titulo-cohete">Nombre</h1>
-            <section id="contenedor-datos-cohete">
-               <ul>
-                    <li><strong>Operador:</strong> <span id="dato-operador">-</span></li>
-                    <li><strong>Altura:</strong> <span id="dato-metros">-</span> metros</li>
-                    <li><strong>Etapas:</strong> <span id="dato-etapas">-</span></li>
-                    <li><strong>Carga útil:</strong> <span id="dato-toneladas">-</span> toneladas</li>
-                    <li><strong>Reutilización:</strong> <span id="dato-reutilizacion">-</span></li>
+    <main class="principal-aplicacion"> 
+        <div class="contenedor">
+            <h1 id="titulo-cohete" class="principal-aplicacion__titulo">-</h1>
+            <section id="contenedor-datos-cohete" class="tarjeta-detalle">
+               <ul class="tarjeta-detalle__lista">
+                    <li class="tarjeta-detalle__item"><strong class="tarjeta-detalle__etiqueta">Operador:</strong> <span id="dato-operador" class="tarjeta-detalle__valor">-</span></li>
+                    <li class="tarjeta-detalle__item"><strong class="tarjeta-detalle__etiqueta">Altura:</strong> <span id="dato-metros" class="tarjeta-detalle__valor">-</span> metros</li>
+                    <li class="tarjeta-detalle__item"><strong class="tarjeta-detalle__etiqueta">Etapas:</strong> <span id="dato-etapas" class="tarjeta-detalle__valor">-</span></li>
+                    <li class="tarjeta-detalle__item"><strong class="tarjeta-detalle__etiqueta">Carga útil:</strong> <span id="dato-toneladas" class="tarjeta-detalle__valor">-</span> toneladas</li>
+                    <li class="tarjeta-detalle__item"><strong class="tarjeta-detalle__etiqueta">Reutilización:</strong> <span id="dato-reutilizacion" class="tarjeta-detalle__valor">-</span></li>
                 </ul>
             </section>
         </div>
     </main>
 
-    <footer>
-        <p>Rocket.com</p>
+    <footer class="pie-aplicacion">
+        <p class="pie-aplicacion__texto">© 2026 Rocket.com</p>
     </footer>
 </body>
 </html>
