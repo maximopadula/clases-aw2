@@ -1,0 +1,59 @@
+CRITERIOS DE EVALUACIÓN:
+
+    ● Prolijidad, claridad en el código y buenas prácticas.
+    ● Utilización de nombres de identificadores coherentes con el contexto del código.
+    ● Aplicación de las herramientas teóricas y prácticas vistas en clase.
+    ● Modularización del código.
+    ● Organización del proyecto y utilización de nombres de archivos y carpetas coherentes.
+    ● Comentarios en el código acordes a un lenguaje técnico de su funcionamiento.
+    ● Tratamiento de errores.
+
+-----------------------------------------------------------------------------------------------
+DESARROLLO:
+
+Se le solicita agregar a la aplicación ya desarrollada (primer parcial) una interfaz web y
+seguridad con la utilización de Cookies y Token de acceso.
+
+Además, se deberá organizar la aplicación en módulos y utilizar el patron MVC visto en clase.
+Lo que hay hasta ahora son 2 endpoints de consulta que respetan los principios REST, y un
+endpoint de procedimiento.
+
+-----------------------------------------------------------------------------------------------
+INTERFAZ:
+
+La interfaz a desarrollar deberá constar de cuatro páginas y un link mas en el menu que saldrá
+de la sesion activa eliminando la cookie desde el servidor:
+
+    ● Login: Formulario para loguearse.
+
+    ● Items: Pagina que renderiza los datos (items) de la API en la web; en donde cada ítem tendra
+    un enlace a la página Ítem con el id. (Ver la opción de query strings para construir el
+    endpoint desde el front)
+
+    ● Item: Página que muestra un solo ítem consultado con el endpoint preparado para recibir el
+    parámetro.
+
+    ● Procedimiento: Página que tendrá un botón para ejecutar el procedimiento. La interfaz debe mostrar al
+    usuario los datos devueltos; y si el procedimiento se ejecutó con éxito o no. Incluir un
+    texto explicando al usuario qué hace el procedimiento implementado.
+
+(Se evalúa prolijidad en el código, buenas prácticas y usabilidad)
+
+-----------------------------------------------------------------------------------------------
+SEGURIDAD:
+
+Se deberá implementar la seguridad de la aplicación con las herramientas vistas en las clases de
+Login Cookies y Token de acceso.
+
+La seguridad debe, en caso de no disponer de las credenciales, bloquear tanto los endpoints
+como el acceso a las páginas; salvo la página del login. En este flujo, la clave (contraseña) ya
+viene encriptada, por lo tanto, se deberá utilizar el paquete visto en la clase de hashing para
+verificar estas credenciales que vendrán en una consulta a la base de datos PostgreSQL.
+
+También, todas las claves y configuraciones deben estar en un .env
+
+Configurar una ruta para desloguearse “/cerrar-sesion” que se accederá desde el link del menu
+de la aplicación.
+
+(se evalúa: la prolijidad en el código, la modularización, lógica implementada, utilización de las
+herramientas y susinteracciones, flujo coherente de interacción con la aplicación)

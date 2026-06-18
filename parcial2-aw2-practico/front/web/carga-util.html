@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./recursos/js/carga-util.js"></script>
+    <title>Rocket.com</title>
+</head>
+<body>
+
+    <header>
+        <a href="./index.html">
+            <img src="" alt=""> <!-- Logotipo -->           
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./carga-util.html">ranking</a></li>
+                <li><a href="/cerrar-sesion">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <div> <!-- Contenedor para ancho máximo -->
+            <h1>Analizador de Carga Útil 3000</h1>
+            
+            <!-- Texto explicando qué hace el procedimiento (Pide la consigna) -->
+            <section>
+                <p>
+                    <strong>¿Qué hace esta herramienta?</strong><br>
+                    Ejecuta un algoritmo extremadamente avanzado que evalúa la capacidad en toneladas de todos los cohetes y los clasifica automáticamente en categorías estandarizadas.
+                </p>
+                <!-- Botón para ejecutar el procedimiento (Pide la consigna) -->
+                <button id="btn-ejecutar">Ejecutar</button>
+            </section>
+
+            <!-- Texto para indicar si hubo éxito o error (Pide la consigna) -->
+            <p id="mensaje-estado"></p>
+
+            <!-- Contenedor donde mostraremos los datos devueltos (Pide la consigna) -->
+            <section id="contenedor-resultados">
+                <!-- Aquí inyectaremos una tabla generada con JS -->
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Rocket.com</p>
+    </footer>
+</body>
+</html>

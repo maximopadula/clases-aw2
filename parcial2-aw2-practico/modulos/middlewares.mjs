@@ -15,8 +15,8 @@ export function verificarExistenciaCohete(req, res, next) {
     })
 
     if (cohete.length > 0) {
-        // Si existe, guardar en la petición (req) para que la función final lo pueda usar
-        req.coheteEncontrado = cohete;
+        // Si existe, guardar el primer (y único) elemento en la petición
+        req.coheteEncontrado = cohete[0];
 
         // Llamar a next() para indicarle a Express que pase esta misma petición (con el dato inyectado) al siguiente callback en la ruta
         next();
